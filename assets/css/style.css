@@ -110,8 +110,8 @@ footer {
 
 #bio-image {
     float: left;
-    height: 250px;
-    width: 180px;
+    height: auto;
+    max-width: 30%;
     margin: 0px 30px 30px 0px;
 }
 
@@ -244,6 +244,8 @@ input {
     #bio-image {
         float: none;
         margin: 0px 0px 10px 0px;
+        max-width: 50%;
+        height: auto;
     }
 
     #bio-container {
@@ -285,8 +287,8 @@ input {
 
     #portfolio {
         text-align: center;
-    }
-
-    
+    }   
 }
+
+
 
