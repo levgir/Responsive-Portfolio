@@ -221,8 +221,28 @@ input {
     padding: 5px 15px 5px 15px;
 }
 
+@media only screen and (min-width: 833px) {
+    #portfolio {
+        width: 50%;
+        margin-left: 12.5%;
+    }
+
+    #contact {
+        width: 50%;
+        margin-left: 12.5%;
+    }
+
+    #bio-container {
+        width: 50%;
+        margin-left: 12.5%;
+    }
+
+}
+
 @media only screen and (max-width: 832px) {
-    
+    .page-headers {
+        width: 30%;
+    }
 
 }
 
