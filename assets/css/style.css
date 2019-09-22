@@ -10,7 +10,7 @@ html {
 body {
     background-color: #efeee7;
     margin: 0px 0px 40px 0px;
-    padding: 0;
+    padding: 0px 0px 20px 0px;
     top: 0;
     height: 100%;
     background-image: url(../images/interlaced.png);
@@ -205,6 +205,7 @@ form {
 input {
     width: 100%;
     color: #777777;
+    margin-bottom: 10px;
 }
 
 #input-message {
@@ -214,37 +215,54 @@ input {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#contact-button {
+    color: white;
+    background-color: lightseagreen;
+    padding: 5px 15px 5px 15px;
+}
+
 @media only screen and (max-width: 832px) {
+    
+
+}
+
+@media only screen and (max-width: 640px) {
+    
+    [class*="col-"] {
+        width: 90%;
+    }
+
+    .section-headers {
+        padding: 0;
+    }
+
     .page-headers {
-      width: 100%;
+        width: 100%;
     }
 
     .nav-bar-link {
         font-size: 8pt;
     }
 
-    [class*="col-"] {
+    nav {
+        line-height: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-container {
         width: 100%;
     }
 
-    nav {
-        line-height: 16px;
-        margin-right: 10px;
-    }
-
-}
-
-@media only screen and (max-width: 410px) {
-
-    .section-headers {
-        padding: 0;
+    .footerContainer {
+        width: 100%;
     }
 
     /* This is the section for the about me specific css media queries  */
     #bio-image {
         float: none;
         margin: 0px 0px 10px 0px;
-        max-width: 50%;
+        max-width: 80%;
         height: auto;
     }
 
@@ -252,8 +270,14 @@ input {
         text-align: center;
     }
 
+    #bio-photo-div {
+        margin: 0;
+        width: 100%;
+    }
+
     #personal-history {
         text-align: left;
+        width: 100%;
     }
 
     /* This is the section for the portfolio specific css media queries*/
@@ -287,7 +311,11 @@ input {
 
     #portfolio {
         text-align: center;
-    }   
+    }
+    
+    #contactSectionHeader {
+        padding-left: 30px;
+    }
 }
 
 
